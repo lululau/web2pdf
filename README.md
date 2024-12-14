@@ -33,11 +33,12 @@ git clone https://github.com/dvcoolarun/web2pdf.git
 
 Then you can use the tool as follows
 ```bash
-pipenv shell
-pipenv install
-python main.py
+poetry env use 3.x
+poetry install
+pipx install . --python python3.x
 ```
-Just add the webpage URLs separated by commas, and the tool will convert them to PDFs.
+
+Then run `web2pdf` to convert webpages to PDFs. Just add the webpage URLs separated by commas, and the tool will convert them to PDFs.
 
 
 ## Development

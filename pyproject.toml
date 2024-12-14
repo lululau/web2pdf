@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "web2pdf"
+version = "0.1.0"
+description = "CLI to convert webpages to PDFs"
+authors = ["Liu Xiang <liuxiang921@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+web2pdf = "web2pdf.main:main"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+dominate = "*"
+weasyprint = "*"
+grequests = "*"
+pillow = "==9.3.0"
+fake-useragent = "*"
+typer = "*"
+rich = "*"
+validators = "*"
+readability-lxml = "*"
+lxml_html_clean = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

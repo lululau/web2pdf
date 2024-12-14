@@ -277,6 +277,9 @@ class Web2PDFConverter:
                 "[red]Process interrupted by user. Exiting...[/red]")
             raise typer.Exit()
 
-if __name__ == "__main__":
+def main():
     convertor=Web2PDFConverter()
     typer.run(convertor.main)
+
+if __name__ == "__main__":
+    main()
